@@ -1,0 +1,103 @@
+.transition{
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+   
+}
+.borderRadius(@number:5px){
+    -moz-border-radius: @number; /* Firefox */
+    -webkit-border-radius: @number; /* Safari 和 Chrome */
+    -o-border-radius: @number; /* Safari 和 Chrome */
+    border-radius: @number; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+} 
+.hovertransform(@number:-10px){
+    transform:translate(0,@number);
+    -webkit-transform:translate(0,@number);
+    -moz-transform:translate(0,@number);
+    -o-transform:translate(0,@number);
+    -ms-transform:translate(0,@number);
+}
+.shadow{
+    -moz-box-shadow: 2px 2px 15px #666;
+    -webkit-box-shadow: 2px 2px 15px #666;
+    box-shadow: 2px 2px 15px #666;
+}
+.scale(){
+    transition:All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+	-moz-transition:All 0.4s ease-in-out;
+	-o-transition:All 0.4s ease-in-out;
+}
+.maxrow(){
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.hoverscale(@number:1.2){
+    transform:scale(@number);
+    -webkit-transform:scale(@number);
+    -moz-transform:scale(@number);
+    -o-transform:scale(@number);
+    -ms-transform:scale(@number);
+}
+@-webkit-keyframes slowDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+.transform(@args) {
+    transform: @args;
+    -ms-transform: @args;
+    -webkit-transform: @args;
+    -o-transform: @args;
+    -moz-transform: @args;
+  }
+@-moz-keyframes slowDown {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@-o-keyframes slowDown {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes slowDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slowDown-slide {
+    -webkit-animation-name: slowDown;
+    -moz-animation-name: slowDown;
+    -o-animation-name: slowDown;
+    animation-name: slowDown;
+    -webkit-animation-duration: .4s;
+    -moz-animation-duration: .4s;
+    animation-duration: .4s;
+    display: block;
+}

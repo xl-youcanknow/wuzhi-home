@@ -1,0 +1,31 @@
+Folder( src ) -->
+	
+	Folder( api ) -->
+		index.js  ( Interface Profile )
+	Folder( components ) -->	
+		* Component templates for each page
+	Folder( lang ) -->	
+		Chinese.js = ZH_CN
+		English.js = en
+		index.js -> Return  object to get the current language file
+	Folder( public) -->	
+		Folder( css )
+			currency.less ( General Style Function )
+			index.css     ( Browser Style Reset File )
+		Folder( js )
+			tool.js  ( Custom Common Functions )
+	Folder( store ) -->
+		modules -->
+			currency.js (Universal state, mainly used to configure public data: display, hiding, language ...)
+			products.js ( Product, shopping cart, order data, status operation )
+			user.js ( User login status, information )
+		index.js ( modules config )
+	Folder( view ) -->
+		layout ( Public structure, head, neck, bottom )
+		.vue ( Vue files, mainly for routing jumps)
+
+
+2019.03.05
+  Add demo link
+  Modified documents: @src/view/layout/layoutHeader  and @src/lang/English.js
+
