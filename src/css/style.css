@@ -254,7 +254,8 @@ a:hover {
   padding-bottom: 30px;
 }
 .page1 .yh {
-  background: url('../img/yh_bg.jpg');
+  /* background: url('../img/yh_bg.jpg'); */
+  background: linear-gradient(to bottom, #abd9ff, #ffffff);
 }
 .page1 .hd ul {
   display: flex;
